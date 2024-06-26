@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-q7GzjUIJZAx2r53KlQA5jsRImk8IlMTQFPeGz9LcAVpaeP+aO0h/cXmRFp4EKXb5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppons', sans-serif;
+  }
+  
+  /* :root {
+    --bg-color: #051a3e;
+    --second-bg-color: #051a3e;
+    --text-color: #fff;
+    --main-color:#00a6ff     ;
+  } */
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: #019bf5;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 3rem;
+    margin-top: 0px;
+  }
+  
+  .header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+  } 
+  
+  .header h1{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    /* letter-spacing: 0.1rem; */
+    cursor: default;
+  }
+  
+  .Enkhjin{
+    padding: 20px;
+    padding-top: 0px;
+  }
+  
+  .back-button a {
+    height: auto;
+    width: auto;
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: #019bf5;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+    main {
+        padding: 20px;
+        text-align: center;
+      }
+  
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+        gap: 20px; /* Adjust the gap between images */
+      }
+  
+      .image-grid img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        border: 3px solid #019bf5;
+        border-radius: 15px;
+      }
+
+
+.video-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 13rem;
+    margin-bottom: 5px;
+
+  }
+  
+  .container .golloh .btn{
+    margin-top: 45px;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    border: 3px solid #019bf5;
+    border-radius: 15px;
+  }
+  
+    .container{
+      position: relative;
+      /* min-height: 100vh; */
+      padding-bottom: 5rem;
+      background-color: #1f242d;
+      padding-bottom: 50px;
+      margin-bottom: 0px;
+    }
+
+    .logo-slider {
+        width: 80%; /* Adjust the width as needed */
+        margin: 50px auto; /* Center the slider on the page */
+        color: #0ef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+        margin-top: 10px;
+      }
+      
+      .Enkhjinbichamduurdhairtaibaihbolno{
+        margin-bottom: 0px;
+        background: #033c8c;
+          padding-top: 10px;
+          padding-bottom: 0px;
+      }
+      
+      .Enkhjinbichamduurdhairtaibaihbolno .logo-slider img{
+        width: 80px;
+        height: auto;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+      
+      .Enkhjinbichamduurdhairtaibaihbolno .logo-slider{
+        height: 80px;
+        width: 100%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+      
+      .logo-slider img {
+        width: 100%; /* Make sure the images fill the container */;
+      }
+      
+      
+      
+      
+      
+       
+        .link .social-media p{
+          font-size: 0.8rem;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+          color: #fff;
+        }
+        
+        .link{
+          margin-top: 0px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #033c8c;
+        }
+        
+        .link .social-media a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        margin: 5px 15px 5px 0;
+        transition: .5rem ease;
+        margin-left: 2%;
+        text-decoration: none;
+        }
+      
+        .link .social-media {
+          margin-left: 10px;
+        }
+        
+        .link img{
+          height: 150px;
+          width: 150px;
+          border: 3px solid #fff;
+          border-radius: 30px;
+          margin-right: 10px;
+          margin-left: 0px;
+        }
+      
+        .footer{
+          background: #019bf5;
+          height: auto;
+          width: 100vw;
+          padding-top: 15px;
+          padding-bottom: 2px;
+          margin-top: 3rem;
+          margin-bottom: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        .footer h1{
+          padding-top: 5px;
+          /* padding-bottom: 5px; */
+          margin-bottom: 20px;
+          font-size: 1.5rem;
+          font-weight: 600;
+          /* letter-spacing: 0.5px; */
+        }
+      
+        .credit{
+          font-size: 0.6rem;
+          color: white;
+        }
+        .credit span{
+          color: #fff;
+        }
+      
+
+        @media (max-width: 1200px) {
+          html {
+            font-size: 55%;
+          }
+        }
+        
+        @media (max-width: 991px) {
+          .header {
+            padding: 2rem 3%;
+          }
+        }
+        
+        @media (max-width: 768px) {
+          #menu-icon {
+            display: block;
+          }
+        
+          .navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            padding: 1rem 3%;
+            background: #fff;
+            border-top: .1rem solid rgba(0, 0, 0, .2);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+            display: none;
+          }
+        
+          .navbar.active{
+            display: block;
+          }
+        
+          .navbar a{
+            display: block;
+            font-size: 2rem;
+            margin: 3rem 0;
+          }
+        }
+        
+        @media (max-width: 450px) {
+          html{
+            font-size: 50%;
+          }
+        }
+    
+    </style>
+
+  </head>
+<body>
+
+    <div class="header">
+        <div class="back-button">
+          <a href="#" onclick="goBack()">Буцах</a>
+        </div>
+        <h1>Зургийн цомог</h1>
+      </div>
+
+
+    <div class="video-container">
+        <video autoplay muted loop poster="video-thumbnail.jpg">
+          <source src="/BU/img/bur-undur.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <main>
+        <div class="image-grid">
+          <img src="/BU/img/tsomog1.jpeg" alt="Image 1">
+          <img src="/BU/img/tsomog10.jpeg" alt="Image 2">
+          <img src="/BU/img/tsomog11.jpeg" alt="Image 3">
+          <img src="/BU/img/tsomog12.jpeg" alt="Image 4">
+          <img src="/BU/img/tsomog13.jpeg" alt="Image 5">
+          <img src="/BU/img/tsomog15.jpeg" alt="Image 6">
+          <img src="/BU/img/tsomog14.jpeg" alt="Image 3">
+          <img src="/BU/img/tsomog16.jpeg" alt="Image 4">
+          <img src="/BU/img/tsomog17.jpeg" alt="Image 5">
+          <img src="/BU/img/tsomog18.jpeg" alt="Image 6">
+          <img src="/BU/img/tsomog19.jpeg" alt="Image 3">
+          <img src="/BU/img/tsomog20.jpeg" alt="Image 4">
+          <img src="/BU/img/tsomog21.jpeg" alt="Image 5">
+          <img src="/BU/img/tsomog22.jpeg" alt="Image 6">
+          <img src="/BU/img/tsomog23.jpeg" alt="Image 3">
+          <img src="/BU/img/tsomog24.jpeg" alt="Image 4">
+          <img src="/BU/img/tsomog25.jpeg" alt="Image 5">
+          <img src="/BU/img/tsomog26.jpeg" alt="Image 6">
+          <img src="/BU/img/tsomog27.jpeg" alt="Image 3">
+          <img src="/BU/img/tsomog28.jpeg" alt="Image 4">
+          <img src="/BU/img/tsomog29.jpeg" alt="Image 5">
+          <img src="/BU/img/tsomog30.jpeg" alt="Image 6">
+          <img src="/BU/img/tsomog31.jpeg" alt="Image 3">
+          <img src="/BU/img/tsomog32.jpeg" alt="Image 4">
+          <img src="/BU/img/tsomog2.jpeg" alt="Image 5">
+          <img src="/BU/img/tsomog3.jpeg" alt="Image 6">        
+          <img src="/BU/img/tsomog4.jpeg" alt="Image 4">
+          <img src="/BU/img/tsomog5.jpeg" alt="Image 5">
+          <img src="/BU/img/tsomog6.jpeg" alt="Image 6">
+          <img src="/BU/img/tsomog7.jpeg" alt="Image 3">
+          <img src="/BU/img/tsomog8.jpeg" alt="Image 4">
+          <img src="/BU/img/tsomog9.jpeg" alt="Image 5">
+        </div>
+      </main>
+
+      <section class="footer">
+        <h1 class="credit">&copy; <span>Cyberfox x</span> Hope Up</h1>
+      </section>
+    </section>     
+      <script src="./script.js"></script>
+
+      <script>
+        // Add this to your script.js file
+function goBack() {
+    window.history.back();
+  }
+  
+      </script>
+</body>
+</html>

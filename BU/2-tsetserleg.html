@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бор-Өндөр</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      scroll-behavior: smooth;
+      font-family: 'Poppons', sans-serif;
+    }
+    
+    /* :root {
+      --bg-color: #051a3e;
+      --second-bg-color: #051a3e;
+      --text-color: #fff;
+      --main-color:#00a6ff     ;
+    } */
+    
+    html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    
+    .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2rem 9%;
+      background: #019bf5;
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+      z-index: 100;
+      margin-bottom: 3rem;
+      margin-top: 0px;
+    }
+    
+    .header.sticky{
+      border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    } 
+    
+    .header h1{
+      font-size: 2.5rem;
+      color: #fff;
+      font-weight: 600;
+      /* letter-spacing: 0.1rem; */
+      cursor: default;
+    }
+    
+    .Enkhjin img {
+          width: 95%;
+          height: auto;
+          border-radius: 15px;
+          border: 3px solid #019bf5;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+    
+    .back-button a{
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #019bf5;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    
+    .Enkhjin{
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 12rem;
+    }
+    
+    .Enkhjin h3{
+    color: #000;
+    font-size: 1.9rem;
+    font-weight: 600;
+    }
+    
+    .Enkhjin p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+    }
+    
+    .Enkhjin .tod{
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 600;
+    }
+
+    .lol{
+      margin-top: 50px;
+      border-top: 3px solid #019bf5;
+    }
+
+    .lol p{
+      color: #222222;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .lol a{
+      color: #019bf5;
+    }
+    
+    /* .back-button a {
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #033c8c;
+      text-decoration: none;
+      margin-right: 20px;
+    } */
+    
+    
+    /* .content2{
+      flex: 1 1 42rem;  
+      margin-bottom: 7rem; 
+      padding-bottom: 0px;
+      margin-top: .3rem;
+     }
+    
+     .content2 h3{
+      color: #fff;
+      font-size: 1.6rem;
+      margin-top: .3rem;
+      letter-spacing: 0.5px;
+      font-weight: 900;
+     }
+    
+     .content2 p{
+      padding: 1rem 0;
+      font-size: 1.2rem;
+      color: #fff;
+      line-height: 2;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+     } */
+    
+     .footer{
+      background: #019bf5;
+      height: auto;
+      width: 100vw;
+      padding-top: 15px;
+      padding-bottom: 2px;
+      margin-top: 3rem;
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .footer h1{
+      padding-top: 5px;
+      /* padding-bottom: 5px; */
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      /* letter-spacing: 0.5px; */
+    }
+    
+    .credit{
+      font-size: 0.6rem;
+      color: white;
+    }
+    .credit span{
+      color: #fff;
+    }
+    
+       /* breakpoints */
+    @media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+    }
+    
+    @media (max-width: 991px) {
+    .header {
+      padding: 2rem 3%;
+    }
+    }
+    
+    @media (max-width: 768px) {
+    #menu-icon {
+      display: block;
+    }
+    
+    .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: #fff;
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      display: none;
+    }
+    
+    .navbar.active{
+      display: block;
+    }
+    
+    .navbar a{
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+    }
+    }
+    
+    @media (max-width: 450px) {
+    html{
+      font-size: 50%;
+    }
+    }
+        </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="back-button">
+          <a href="#" onclick="goBack()">Буцах</a>
+        </div>
+        <h1>Бор-Өндөр сумын 2-р цэцэрлэг</h1>
+      </div>
+
+      <div class="Enkhjin">      
+        <img src="/BU/img2/narhan.jpeg" alt="Sample Image">
+        <p>Олон улсын “Эко сургууль” хөтөлбөрийн “Хүрэл,Мөнгөн Гэрэгэ, Хос Алтан Гэрэгэ” өргөмжлөлт, Хос Ногоон Тугийг эзэмшигч Хэнтий аймгийн  ХОШОЙ ТЭРГҮҮНИЙ “ЭКО ЦЭЦЭРЛЭГ”, 2022 оны Хэнтий аймгийн ШИЛДЭГ ЦЭЦЭРЛЭГ өргөмжлөлт Бор-Өндөр сумын 2-р цэцэрлэг
+
+            Анх 2013 оны 12-р сард цэцэрлэгийн барилга  ашиглалтанд орж 2014 оны 09-р сарын 03-наас сургалтын  үйл ажиллагаа явуулж эхэлсэн.
+            Цэцэрлэг нь  4 бүлэгт 100 хүүхэд хүлээн авах хүчин чадалтай. Жил бүр тойргийнхоо 126-130 хүүхдийг хүлээн авдаг. Нийт 18 багш, ажилтантай, мэргэжлийн боловсон хүчнээр 100% хангагдсан цэцэрлэг юм. 
+            Хамт олноороо “ЗОРИЛГОТОЙ, ЗОГСОЛТГҮЙ ХИЧЭЭДЭГ, ЧАДДАГ, ЧАРМАЙДАГ, СУРАХ ТЭМҮҮЛЭЛ ДҮҮРЭН ЭРҮҮЛ МОНГОЛ ХҮҮХЭД” гэсэн алсын хараатай
+             “БИД ДЭЛХИЙ ЖИШИГТ ТЭМҮҮЛСЭН, УЛСЫН ЖИШИГТ ХҮРСЭН СУРГУУЛИЙН ӨМНӨХ БОЛОВСРОЛЫН ҮЙЛЧИЛГЭЭГ ХҮРГЭНЭ” гэсэн эрхэм зорилгын дор нэгдэн  хичээл сургалтын үйл ажиллагаагаа чанартай зохион байгуулан ажиллаж байна.
+            Бидний томоохон амжилтуудаас дурьдвал:
+            •	2016,2017,2018 онд Хэнтий аймгийн өсвөрийн  үндэсний бөхчүүдийн аймгийн аварга шалгаруулах тэмцээний цэцэрлэгийн насанд бяцхан бөхчүүд маань амжилттай барилдаж шагналт байруудыг эзлэж явсан.
+            •	2016 онд Бор-өндөр сумын “Шилдэг байгууллага”
+            •	2017 онд Бор-өндөр сумын “Шилдэг тохижилттой байгууллага”
+            •	2019 онд Хэнтий аймгийн  “Хөдөлгөөн эрүүл мэндийг дэмжигч цэцэрлэг”
+            •	2019,2020 онд Хэнтий аймгийн ЗДТГ, Нийгмийн бодлогын хэлтэс, Байгаль орчин аялал жуулчлалын газар, БСУГ-аас хамтран зохион байгуулсан “Эко цэцэрлэг” уралдаанд шалгарч Хэнтий аймгийн “Хошой эко цэцэрлэг болсон. 
+            •	2019 онд Олон улсын “Эко сургууль” хөтөлбөрийн “Хүрэл гэрэгэ” авсан
+            •	 2020 онд “Мөнгөн гэрэгэ” цом, өргөмжлөл хүртэж  “Эко үйл ажиллагааны Сайн туршлага”-аа Хэнтий аймгийн “Хүрэл гэрэгэ” өргөмжлөлт 16 цэцэрлэг сургуульд болон ОУ-ын “Эко сургууль хөтөлбөрийн багш нарт танилцуулж  өндөр үнэлгээ авсан.
+            •	 2021, 2022 онд уг хөтөлбөрийн Алтан гэрэгэ, Ногоон тугийн эзэн болсон
+            •	2022 онд Хэнтий аймгийн 34 цэцэрлэгээс үйл ажиллагаагаараа тэргүүлэн “Аймгийн Шилдэг цэцэрлэг” өргөмжлөлийг гардан авсан. Үйл ажиаллагааныхаа тушлагаа Хэнтий. Сүхбаатар, Дорнод аймгийн цэцэрлэгүүдэд танилцуулж түгээн дэлгэрүүлсэн
+            •	2023 онд “Хүүхэд хамгааллын баг”-ын ажлынхаа сайн туршлагаа Хэнтий аймгийн 34 цэцэрлэгт танилцуулж улмаар Улаанбаатар хотод НҮБ-ын Хүүхдийн сан, БШУЯ, МУБИС-ын урилгаар Сүхбаатар, Дундговь, Өмнөговь, Хэнтий аймгийн цэцэрлэгүүдийн хүүхэд хамгааллын баг бүрэлдэхүүнд “Хүүхэд хамгааллын багийн Сайн туршлага”-аа танилцуулан өндөр үнэлэлт авсан гэх мэт амжилтуудыг үзүүлсэн. 
+          </p>
+
+          <div class="lol">
+          <p >Холбоо барих</p>
+          <ul>   
+             <li><p>Байгууллагын хаяг: Хэнтий аймгийн Бор-Өндөр сумын 3-р баг</p></li>
+            <li><p>Дуудлага мэдээлэл хүлээн авах утас: 88091423</p></li>
+             <li><p>Майл хаяг:  Narkhan_tsetserleg@yahoo.com</p></li>
+             <p>Газрын зураг дээрх байршил нь :<a href="https://www.google.com/search?q=46.263123%2C109.411564&oq=46.263123%2C109.411564&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDEyMTRqMGo5qAIAsAIA&client" target="_blank"> Энд дарна уу...</a></p>
+          </ul>   
+          </div>
+
+   
+      </div>
+
+      <section class="footer">
+        <h1 class="credit">&copy; <span>Cyberfox x</span> Hope Up</h1>
+      </section>
+    </section>  
+   
+  <script src="script.js"></script>
+
+  <script>
+    // Add this to your script.js file
+function goBack() {
+    window.history.back();
+  }
+  
+
+
+    // Add this to your script.js file
+$(document).ready(function(){
+    $('.logo-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000, // Adjust the speed as needed
+    });
+  });
+  </script>
+</body>
+</html>
+
+    
+</body>
+</html>

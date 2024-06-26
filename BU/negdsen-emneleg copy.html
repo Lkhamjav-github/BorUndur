@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бор-Өндөр</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      scroll-behavior: smooth;
+      font-family: 'Poppons', sans-serif;
+    }
+    
+    /* :root {
+      --bg-color: #051a3e;
+      --second-bg-color: #051a3e;
+      --text-color: #fff;
+      --main-color:#00a6ff     ;
+    } */
+    
+    html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    
+    .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2rem 9%;
+      background: #019bf5;
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+      z-index: 100;
+      margin-bottom: 3rem;
+      margin-top: 0px;
+    }
+    
+    .header.sticky{
+      border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    } 
+    
+    .header h1{
+      font-size: 2.5rem;
+      color: #fff;
+      font-weight: 600;
+      /* letter-spacing: 0.1rem; */
+      cursor: default;
+    }
+    
+    .Enkhjin img {
+          width: 95%;
+          height: auto;
+          border-radius: 15px;
+          border: 3px solid #019bf5;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+    
+    .back-button a{
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #019bf5;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    
+    .Enkhjin{
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 12rem;
+    }
+    
+    .Enkhjin h3{
+    color: #000;
+    font-size: 1.9rem;
+    font-weight: 600;
+    }
+    
+    .Enkhjin p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+    }
+    
+    .Enkhjin .tod{
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 600;
+    }
+
+    .lol{
+      margin-top: 50px;
+      border-top: 3px solid #019bf5;
+    }
+
+    .lol p{
+      color: #222222;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .lol a{
+      color: #019bf5;
+    }
+    
+    /* .back-button a {
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #033c8c;
+      text-decoration: none;
+      margin-right: 20px;
+    } */
+    
+    
+    /* .content2{
+      flex: 1 1 42rem;  
+      margin-bottom: 7rem; 
+      padding-bottom: 0px;
+      margin-top: .3rem;
+     }
+    
+     .content2 h3{
+      color: #fff;
+      font-size: 1.6rem;
+      margin-top: .3rem;
+      letter-spacing: 0.5px;
+      font-weight: 900;
+     }
+    
+     .content2 p{
+      padding: 1rem 0;
+      font-size: 1.2rem;
+      color: #fff;
+      line-height: 2;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+     } */
+    
+     .footer{
+      background: #019bf5;
+      height: auto;
+      width: 100vw;
+      padding-top: 15px;
+      padding-bottom: 2px;
+      margin-top: 3rem;
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .footer h1{
+      padding-top: 5px;
+      /* padding-bottom: 5px; */
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      /* letter-spacing: 0.5px; */
+    }
+    
+    .credit{
+      font-size: 0.6rem;
+      color: white;
+    }
+    .credit span{
+      color: #fff;
+    }
+    
+       /* breakpoints */
+    @media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+    }
+    
+    @media (max-width: 991px) {
+    .header {
+      padding: 2rem 3%;
+    }
+    }
+    
+    @media (max-width: 768px) {
+    #menu-icon {
+      display: block;
+    }
+    
+    .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: #fff;
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      display: none;
+    }
+    
+    .navbar.active{
+      display: block;
+    }
+    
+    .navbar a{
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+    }
+    }
+    
+    @media (max-width: 450px) {
+    html{
+      font-size: 50%;
+    }
+    }
+        </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="back-button">
+          <a href="#" onclick="goBack()">Буцах</a>
+        </div>
+        <h1>Бор-Өндөр сумын Нэгдсэн эмнэлэг</h1>
+      </div>
+
+      <div class="Enkhjin">      
+        <img src="/BU/img2/negdsen em.jpeg" alt="Sample Image">
+        <p>Хэнтий аймгийн Дархан сумын нутагт Бор-Өндөрийн УБҮ-ийн ашиглалтын
+            өмнөх бүтээн байгуулалт өрнөж байсан үед Хэнтий аймгийн Эрүүлийг хамгаалах
+            газрын даргын 1981 оны 08-р сарын 27-ны 163 дугаар тоот тушаалаар хүний бага
+            эмчийн салбар Бор-Өндөр тосгонд байгуулагдаж эрхлэгчээр бага эмч Ж.Бумаа,
+            сувилагчаар Ц.Цэвэлмаа, асрагчаар Д.Балжмаа нар томилогдон ажилласан нь энэ
+            эмнэлгийн анхдагч 3 юм.
+            Тус эмнэлэг нь эмнэлгийн зориулалтын 3 барилга байгууламж, түргэний 2
+            авто машинтай, 61 эмч, эмнэлгийн мэргэжилтнүүдтэйгээр 5 тасагт Гэмтэл согог
+            судлал, Мэс засал, Дотор, Хүүхэд нярай, Эх барих эмэгтэйчүүд, Уламжлалт
+            анагаах ухаан, Дүрс оношилгоо, эрчимт эмчилгээ мэдээгүйжүүлэг, чих хамар
+            хоолой гэсэн 9 чиглэлийн Эрүүл мэндийн болон нийгмийн эрүүл мэндийн тусламж
+            үйлчилгээг үзүүлэн ажиллаж 43 жилийн түүхийг бүтээн ажиллаж байна. Өдөртөө
+            амбулаториор 200 гариу үйлчлүүлэгчдэд, хэвтэн эмчлүүлсэгсэдэд 67 орны хүчин
+            чадалтайгаар Нэгдсэн эмнэлгийн MNS2017:5095 стандартын дагуу эрүүүл мэндийн
+            тусламж үйлчилгээг харъяалал, шатлал харгалзахгүйгээр эрүүл мэндийн
+            даатгалаар үзүүлж байна.
+            Бидний дунд Монгол Улсын хүний гавьяат эмч, Алтан гадас, Хөдөлмөрийн
+            хүндэт медальт, Эрүүлийг хамгаалахын Тэргүүний ажилтан, Магистр, Тэргүүлэх,
+            ахлах зэрэгтэй эмч эмнэлгийн мэргэжилтнүүд маань мэргэжлээрээ бахархаж,
+            мэргэжлийнхээ эзэн болд чаддаг бөгөөд мэдлэг ур чадвар, харилцаа хандлагаа
+            тасралтгүй дээшлүүлэн эмнэлгийн ажилтны ёс зүйг дээдлэн ажиллаж байна.
+          </p>
+
+          <div class="lol">
+          <p >Холбоо барих</p>
+          <ul>   
+             <li><p>Байгууллагын хаяг: Бор-Өндөр сум, I баг</p></li>
+            <li><p>Дуудлага мэдээлэл хүлээн авах утас: 70567103, Дарга 88012668</p></li>
+             <li><p>Майл хаяг: Borundurhospital@yahoo.com, Borundurhospital@gmail.com</p></li>
+             <p>Газрын зураг дээрх байршил нь :<a href="https://www.google.com/search?q=46.254524%2C109.421985&oq=46.254524%2C109.421985&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzc0NmowajmoAgCwAgA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8" target="_blank"> Энд дарна уу...</a></p>
+          </ul>   
+          </div>
+
+   
+      </div>
+
+      <section class="footer">
+        <h1 class="credit">&copy; <span>Cyberfox x</span> Hope Up</h1>
+      </section>
+    </section>  
+   
+  <script src="script.js"></script>
+
+  <script>
+    // Add this to your script.js file
+function goBack() {
+    window.history.back();
+  }
+  
+
+
+    // Add this to your script.js file
+$(document).ready(function(){
+    $('.logo-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000, // Adjust the speed as needed
+    });
+  });
+  </script>
+</body>
+</html>
+
+    
+</body>
+</html>

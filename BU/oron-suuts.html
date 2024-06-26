@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-q7GzjUIJZAx2r53KlQA5jsRImk8IlMTQFPeGz9LcAVpaeP+aO0h/cXmRFp4EKXb5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppons', sans-serif;
+  }
+  
+  /* :root {
+    --bg-color: #051a3e;
+    --second-bg-color: #051a3e;
+    --text-color: #fff;
+    --main-color:#00a6ff     ;
+  } */
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: #019bf5;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 3rem;
+    margin-top: 0px;
+  }
+  
+  .header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+  } 
+  
+  .header h1{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    /* letter-spacing: 0.1rem; */
+    cursor: default;
+  }
+
+  .navbar{
+    border-radius: 0 0 30px 30px;
+    /* border: 0.2rem solid #019bf5; */
+    margin-top: 0px;
+  }
+  
+  .navbar a{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #000;
+    margin-left: 4rem;
+  }
+
+  .navbar a:hover{
+    color: #019bf5;
+  }
+  
+  #menu-icon{
+    font-size: 3.6rem;
+    color: #fff;
+    display: none;
+  }
+  
+  .Enkhjin{
+    padding: 20px;
+    padding-top: 0px;
+  }
+  
+  .back-button a {
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #019bf5;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    main {
+      margin-top: 8rem;
+      margin-bottom: 0rem;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .udird{
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  
+    .po h1{
+      font-size: 2.3rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      margin-top: 13px;
+    }
+  
+    button {
+      height: 150px;
+      width: 150px;
+      padding: 10px 10px;
+      /* font-size: 0.9rem; */
+      margin: 5px;
+      cursor: pointer;
+      background-color: #019bf5;
+      color: #fff;
+      /* border: 3px solid #0790ca; */
+      box-shadow: 0 1.5rem 1.5rem #393a3b;
+      border-radius: 30px;
+      margin-bottom: 15px;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+  .tn{
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 0.8rem;
+  }
+
+  .logo-slider {
+    width: 80%; /* Adjust the width as needed */
+    margin: 50px auto; /* Center the slider on the page */
+    color: #0ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-top: 10px;
+  }
+  
+  .Enkhjinbichamduurdhairtaibaihbolno{
+    margin-bottom: 0px;
+    background: #033c8c;
+      padding-top: 10px;
+      padding-bottom: 0px;
+  }
+  
+  .Enkhjinbichamduurdhairtaibaihbolno .logo-slider img{
+    width: 80px;
+    height: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .Enkhjinbichamduurdhairtaibaihbolno .logo-slider{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .logo-slider img {
+    width: 100%; /* Make sure the images fill the container */;
+  }
+  
+  
+  
+  
+  
+   
+  .link .social-media p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* letter-spacing: 0.7px; */
+    margin-left: 0px;
+    padding-left: 0.5px;
+    margin-bottom: 7px;
+    color: #fff;
+  }
+
+  .social-media{
+    margin-right: 30px;
+    padding-right: 0px;
+  }
+  
+  .link{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #019bf5;
+  }
+  
+  .link .social-media a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 10px 10px 10px 0;
+  transition: .5rem ease;
+  margin-left: 2%;
+  text-decoration: none;
+  }
+
+  .link .social-media {
+    margin-left: 10px;
+  }
+
+  .map{
+    margin-left: 0px;
+  }
+  
+  .link img{
+    height: 150px;
+    width: 150px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+  
+  .footer{
+    background: #019bf5;
+    height: auto;
+    width: 100vw;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    margin-top: 3rem;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer h1{
+    padding-top: 5px;
+    /* padding-bottom: 5px; */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* letter-spacing: 0.5px; */
+  }
+
+  .credit{
+    font-size: 0.6rem;
+    color: white;
+  }
+  .credit span{
+    color: #fff;
+  }
+
+    i{
+        height: 10px;
+        width: 10px;
+        font-size: 2rem;
+        color: #fff;
+        margin-right: 18%;
+    }
+
+    p{
+        margin-top: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      html {
+        font-size: 55%;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .header {
+        padding: 2rem 3%;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      #menu-icon {
+        display: block;
+      }
+    
+      .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+      }
+    
+      .navbar.active{
+        display: block;
+      }
+    
+      .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+      }
+    }
+    
+    @media (max-width: 450px) {
+      html{
+        font-size: 50%;
+      }
+    }
+
+    </style>
+
+
+  </head>
+<body>
+
+    <div class="header">
+        <div class="back-button">
+          <a href="#" onclick="goBack()">Буцах</a>
+        </div>
+        <h1>Орон сууц</h1>
+      </div>
+      
+<main>    
+
+    <a href="https://www.google.com/maps/place/48,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2525817,109.4256258,426m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7fa20320f23:0xc0d91399a4a1b8a0!8m2!3d46.2526143!4d109.4252514!16s%2Fg%2F11cpfm3f_n?entry=ttu">
+      <button><p>48</p></button>
+    </a> 
+
+    <a href="https://www.google.com/maps/place/50,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2525817,109.4256258,426m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7fa3e90c8f9:0x535d77d7056b70ee!8m2!3d46.2533543!4d109.4260549!16s%2Fg%2F11c1gyfws8?entry=ttu">
+      <button><p>51</p></button>
+    </a> 
+
+    <a href="https://www.google.com/maps/place/47,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.252989,109.4259387,717m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7f9ed685629:0xe0019646072d53f9!8m2!3d46.2519347!4d109.4245604!16s%2Fg%2F11c4p0_p4l?entry=ttu">
+        <button><p>47</p></button>
+    </a>    
+
+    <a href="https://www.google.com/maps/place/49,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.252989,109.4259387,717m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7f997a2801d:0xfa48de435fef5ce7!8m2!3d46.2513764!4d109.425129!16s%2Fg%2F11cpmwc_sr?entry=ttu">
+        <button><p>49</p></button>
+    </a> 
+
+    <a href="https://www.google.com/maps/place/46%C2%B015'11.7%22N+109%C2%B025'20.7%22E/@46.253252,109.4201813,828m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d46.253252!4d109.42241?entry=ttu">
+        <button><p>50</p></button>
+    </a> 
+
+    <a href="https://www.google.com/maps/place/44,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2534597,109.424623,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7fa516ed9ef:0x50a72b098f69124d!8m2!3d46.2541394!4d109.4275598!16s%2Fg%2F12xq1y6yf?entry=ttu">
+        <button><p>44</p></button>
+    </a> 
+
+    <a href="https://www.google.com/maps/place/45,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2528291,109.4248162,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7fa69e3b4d3:0x6c0d9dda97d7518f!8m2!3d46.2539192!4d109.4260779!16s%2Fg%2F12xppxxf5?entry=ttu">
+        <button><p>45</p></button>
+    </a>    
+
+    <a href="https://www.google.com/maps/place/2%D1%80+%D0%A5%D1%8D%D1%81%D1%8D%D0%B3,+46,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2528291,109.4248162,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7fa4acfc533:0xdc5203a832383152!8m2!3d46.2534055!4d109.427549!16s%2Fg%2F11b77l4m8x?entry=ttu">
+        <button><p>46</p></button>
+    </a> 
+
+    <a href="https://www.google.com/maps/place/43,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2536452,109.4252453,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7fafa875cad:0x858d6d81576b111d!8m2!3d46.2549617!4d109.4278072!16s%2Fg%2F11c4xzn376?entry=ttu">
+        <button><p>43</p></button>
+    </a> 
+
+    <a href="https://www.google.com/maps/place/42,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2534116,109.4251042,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7faea6689cd:0x3859e232d7674f94!8m2!3d46.2557073!4d109.4276477!16s%2Fg%2F12xpk0kgz?entry=ttu">
+        <button><p>42</p></button>
+    </a> 
+
+    <a href="https://www.google.com/maps/place/41,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2565681,109.4260454,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7fab0d8edeb:0x7a01afd4bf2fdbaa!8m2!3d46.2565644!4d109.4274659!16s%2Fg%2F12xqyhmr5?entry=ttu">
+      <button><p>41</p></button>
+  </a> 
+  
+  <a href="https://www.google.com/maps/place/40,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2565681,109.4260454,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7e553c246db:0xa6e6b30d6875f4b7!8m2!3d46.257344!4d109.4273074!16s%2Fg%2F12xqrf9ym?entry=ttu">
+    <button><p>40</p></button>
+</a> 
+
+    <a href="https://www.google.com/maps/place/39,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2565681,109.4260454,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7eff13795c9:0xc45b4e1b49f3120d!8m2!3d46.2580249!4d109.4267309!16s%2Fg%2F12xpzg95j?entry=ttu">
+      <button><p>39</p></button>
+  </a> 
+
+  <a href="https://www.google.com/maps/place/38,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2565681,109.4260454,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7efea95c1fd:0xb5b8e3ea5a9a9d80!8m2!3d46.2584831!4d109.4258296!16s%2Fg%2F12xqv_w9h?entry=ttu">
+    <button><p>38</p></button>
+</a> 
+
+<a href="https://www.google.com/maps/place/37,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2565681,109.4260454,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7efc6a1d795:0x5d0c5c6f86fecb17!8m2!3d46.2584161!4d109.4251282!16s%2Fg%2F12xqhbf26?entry=ttu">
+  <button><p>37</p></button>
+</a> 
+  
+
+<a href="https://www.google.com/maps/place/36,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2565681,109.4260454,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7f0129696ad:0xca22ca9f77737a82!8m2!3d46.2563113!4d109.4250472!16s%2Fg%2F12xq97jqv?entry=ttu">
+  <button><p>36</p></button>
+</a> 
+
+<a href="https://www.google.com/maps/place/35,+%D0%91%D0%BE%D1%80-%D3%A8%D0%BD%D0%B4%D3%A9%D1%80,+%D0%A5%D1%8D%D0%BD%D1%82%D0%B8%D0%B9/@46.2566163,109.4259756,828m/data=!3m1!1e3!4m6!3m5!1s0x5dedb7f0204ac431:0xa4b34669b7fb0d98!8m2!3d46.2573597!4d109.4248277!16s%2Fg%2F12xr0cnll?entry=ttu">
+  <button><p>35</p></button>
+</a> 
+
+<a href="https://www.google.com/maps/place/46%C2%B015'19.5%22N+109%C2%B025'28.8%22E/@46.255405,109.4221021,828m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d46.255405!4d109.424677?entry=ttu">
+  <button><p>Цагдаагийн байр</p></button>
+</a> 
+
+</main>  
+
+
+  <section class="footer">
+    <h1 class="credit">&copy; <span>Cyberfox x</span> Hope Up</h1>
+  </section>
+</section>      
+<script src="./script.js"></script>
+
+<script>
+  // Add this to your script.js file
+function goBack() {
+    window.history.back();
+  }
+  
+
+
+    // Add this to your script.js file
+$(document).ready(function(){
+    $('.logo-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000, // Adjust the speed as needed
+    });
+  });
+</script>
+</body>
+</html>

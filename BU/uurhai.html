@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бор-Өндөр</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      scroll-behavior: smooth;
+      font-family: 'Poppons', sans-serif;
+    }
+    
+    /* :root {
+      --bg-color: #051a3e;
+      --second-bg-color: #051a3e;
+      --text-color: #fff;
+      --main-color:#00a6ff     ;
+    } */
+    
+    html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    
+    .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2rem 9%;
+      background: #019bf5;
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+      z-index: 100;
+      margin-bottom: 3rem;
+      margin-top: 0px;
+    }
+    
+    .header.sticky{
+      border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    } 
+    
+    .header h1{
+      font-size: 2.5rem;
+      color: #fff;
+      font-weight: 600;
+      /* letter-spacing: 0.1rem; */
+      cursor: default;
+    }
+    
+    .Enkhjin img {
+          width: 95%;
+          height: auto;
+          border-radius: 15px;
+          border: 3px solid #019bf5;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+    
+    .back-button a{
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #019bf5;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    
+    .Enkhjin{
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 12rem;
+    }
+    
+    .Enkhjin h3{
+    color: #000;
+    font-size: 1.9rem;
+    font-weight: 600;
+    }
+    
+    .Enkhjin p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+    }
+    
+    .Enkhjin .tod{
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 600;
+    }
+
+    .lol{
+      margin-top: 50px;
+      border-top: 3px solid #019bf5;
+    }
+
+    .lol p{
+      color: #222222;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .lol a{
+      color: #019bf5;
+    }
+    
+    /* .back-button a {
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #033c8c;
+      text-decoration: none;
+      margin-right: 20px;
+    } */
+    
+    
+    /* .content2{
+      flex: 1 1 42rem;  
+      margin-bottom: 7rem; 
+      padding-bottom: 0px;
+      margin-top: .3rem;
+     }
+    
+     .content2 h3{
+      color: #fff;
+      font-size: 1.6rem;
+      margin-top: .3rem;
+      letter-spacing: 0.5px;
+      font-weight: 900;
+     }
+    
+     .content2 p{
+      padding: 1rem 0;
+      font-size: 1.2rem;
+      color: #fff;
+      line-height: 2;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+     } */
+    
+     .footer{
+      background: #019bf5;
+      height: auto;
+      width: 100vw;
+      padding-top: 15px;
+      padding-bottom: 2px;
+      margin-top: 3rem;
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .footer h1{
+      padding-top: 5px;
+      /* padding-bottom: 5px; */
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      /* letter-spacing: 0.5px; */
+    }
+    
+    .credit{
+      font-size: 0.6rem;
+      color: white;
+    }
+    .credit span{
+      color: #fff;
+    }
+    
+       /* breakpoints */
+    @media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+    }
+    
+    @media (max-width: 991px) {
+    .header {
+      padding: 2rem 3%;
+    }
+    }
+    
+    @media (max-width: 768px) {
+    #menu-icon {
+      display: block;
+    }
+    
+    .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: #fff;
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      display: none;
+    }
+    
+    .navbar.active{
+      display: block;
+    }
+    
+    .navbar a{
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+    }
+    }
+    
+    @media (max-width: 450px) {
+    html{
+      font-size: 50%;
+    }
+    }
+        </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="back-button">
+          <a href="#" onclick="goBack()">Буцах</a>
+        </div>
+        <h1>Бор-Өндөр уулын баяжуулах үйлдвэр</h1>
+      </div>
+
+      <div class="Enkhjin">      
+        <img src="/BU/img2/uuliin nayjulah .jpeg" alt="Sample Image">
+        <p>Монголросцветмет төрийн өмчит үйлдвэрийн газар /ТӨҮГ/-ын харьяа зүгт 350 км, Хэнтий аймгийн Бор-Өндөр сумын нутаг дэвсгэрт оршдог бөгөөд 1400 орчим ажиллагсадтай 40 дэх жилдээ үйл ажиллагаагаа явуулж байна.
+
+            Бор-Өндөрийн уулын баяжуулах үйлдвэр /УБҮ/ нь Улаанбаатар хотоос зүүн ура ЧОНГОЛРОСIBEMΕΤ" ΤΘΥΓ Бор-Өндөрийн УБҮ нь анх ЗСБНХУ /хуучин нэрээр/-ын мэргэжилтэн, геологичдоор удирдуулсан хайгуулын ангиуд 1940 оны Бор-Өндөр орчмын хайлуур жоншны орд газруудад судалгаа шинжилгээний ажил явуулж, анхны геологийн зураглал хийсэн бөгөөд 1976-1978 оны урьдчилсан хайгуулын ажлын үр дүнд хүдрийн үндсэн биетүүдийг тогтоон үнэлгээ өгсөн байна. 1979-1982 онд нарийвчилсан хайгуул хийж 1983 оны 01 дүгээр сард хүдрийн нөөцийг улсын нөөцийн комисс баталсан. Бор-Өндөрийн ордод явуулсан олон жилийн судалгааны дүнг үндэслэн БНМАУ-ын Сайд нарын Зөвлөлийн дэргэдэх Улсын төлөвлөгөөний комиссын 1975 оны 248 дугаар тогтоолоор жилд 100.0 мянган тонн хүдэр олборлох хүчин чадалтай хайгуул-ашиглалтын үйлдвэр барих техник-эдийн засгийн үндэслэл боловсруулах даалгаврыг баталснаар үйлдвэрийн зураг, төслийн ажил эхэлжээ.
+            
+            Монгол, Зөвлөлтийн Засгийн газар хоорондын 1976 оны 5 дугаар сарын 27-ны өдрийн хэлэлцээрийн дагуу Бор-Өндөрийн үйлдвэрийн барилга, байгууламжийн эхний хэсгийг "Союзцветметшахтстрой", Зөвлөлтийн барилгын III трест барьж байгуулан, 1982 оны 12 дугаар сарын 26-нд "Монголросцветмет" нэгдлийн бүрэлдэхүүнд ашиглалтад хүлээлгэн өгсөн байна. Геологи хайгуулын ажлын явцад ашиглалтын нөөцийг цаашид өсгөх боломжтой нь тогтоогдсон тул Монгол, Зөвлөлтийн Засгийн газар хоорондын 1980 оны 6 дугаар сарын 13-ны өдрийн хэлэлцээрээр Бор-Өндөрийн хайлуур жоншны ордыг түшиглүүлэн уул уурхайн баяжуулах үйлдвэр байгуулахаар шийдвэрлэж, Зөвлөлтийн "Сибцветметниипроект" болон бусад хэд хэдэн зураг төслийн мэргэжлийн
+            байгууллагын боловсруулсан зураг төслийн дагуу баяжуулах фабрикийг 1981 оноос эхлэн барьж, 1985 оны 12 дугаар сарын 30-ны өдөр ашиглалтад оруулсан
+            
+            түүхтэй.
+            
+            Бор-Өндөрийн уулын баяжуулах үйлдвэр өнөөдөр:
+            
+            Жилд 600 гаруй мян.тн хүдэр боловсруулах хүчин чадалтай Баяжуулах Фабрик,
+            
+            Жоншны хүдэр ил, далд аргаар олборлох Уулын цех, -
+            
+            Жилд 2.4 сая тонн хүдэр олборлож, жилд 600 гаруй мян.тонн хүдэр хуурай -
+            
+            соронзон аргаар боловсруулах хүчин чадалтай Баргилт цех,
+            
+            - "Бор-Өндөр" уулын баяжуулах үйлдвэрийг халаалт, технологийн уураар болон
+            
+            Бор-Өндөр сумыг халаалт, халуун хүйтэн ундны усаар хангах зориулалттай Дулааны станц,
+            
+            - Жилд 25 сая тн.км ачаа эргэлттэй Авто тээврийн цех,
+            
+            мөн Засвар механикийн төв цех, Эрчим хүчний цех, Төмөр замын цех, Материал техникийн хангамжийн хэлтэс, Захиргааны хэлтэс, аж ахуйн алба, Техник хяналтын хэлтэс, Химилабораторийн хэсэг, Аврах анги, Харуул хамгаалалтын алба, Эмнэлгийн анхан шатны үзлэгийн хэсэг зэрэг цех, хэсгүүдтэйгээр үйл ажиллагаагаа явуулж байна.
+          </p>
+
+          <div class="lol">
+          <p >Холбоо барих</p>
+          <ul>   
+             <p>Газрын зураг дээрх байршил нь :<a href="https://www.google.com/search?q=46.266766%2C109.438695&oq=46.266766%2C109.438695&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzc1NWowajmoAgCwAgA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8" target="_blank"> Энд дарна уу...</a></p>
+          </ul>   
+          </div>
+
+   
+      </div>
+
+      <section class="footer">
+        <h1 class="credit">&copy; <span>Cyberfox x</span> Hope Up</h1>
+      </section>
+    </section>  
+   
+  <script src="script.js"></script>
+
+  <script>
+    // Add this to your script.js file
+function goBack() {
+    window.history.back();
+  }
+  
+
+
+    // Add this to your script.js file
+$(document).ready(function(){
+    $('.logo-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000, // Adjust the speed as needed
+    });
+  });
+  </script>
+</body>
+</html>
+
+    
+</body>
+</html>

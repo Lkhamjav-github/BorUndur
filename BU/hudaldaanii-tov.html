@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-q7GzjUIJZAx2r53KlQA5jsRImk8IlMTQFPeGz9LcAVpaeP+aO0h/cXmRFp4EKXb5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppons', sans-serif;
+  }
+  
+  /* :root {
+    --bg-color: #051a3e;
+    --second-bg-color: #051a3e;
+    --text-color: #fff;
+    --main-color:#00a6ff     ;
+  } */
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: #019bf5;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 3rem;
+    margin-top: 0px;
+  }
+  
+  .header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+  } 
+  
+  .header h1{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    /* letter-spacing: 0.1rem; */
+    cursor: default;
+  }
+  
+  .Enkhjin{
+    margin-top: 10rem;
+    padding: 20px;
+    padding-top: 2rem;
+  }
+
+  .Enkhjin li{
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  
+  .back-button a {
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #019bf5;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    main {
+      margin-top: 8rem;
+      padding: 20px;
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+   .content-container h1 {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.content-container li {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.content-container {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.content-container a{
+  text-decoration: none;
+  margin-left: 5px;
+  color: #019bf5;
+}
+
+    .content-container img,
+    .content-container button {
+      margin-bottom: 5px;
+    }
+
+    .content-container img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 15px;
+      border: 3px solid #019bf5;
+    }
+
+    .content-container p{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .content-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .logo-slider {
+    width: 80%; /* Adjust the width as needed */
+    margin: 50px auto; /* Center the slider on the page */
+    color: #0ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-top: 10px;
+  }
+  
+  .Enkhjinbichamduurdhairtaibaihbolno{
+    margin-bottom: 0px;
+    background: #019bf5;
+      padding-top: 10px;
+      padding-bottom: 0px;
+  }
+  
+  .Enkhjinbichamduurdhairtaibaihbolno .logo-slider img{
+    width: 80px;
+    height: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .Enkhjinbichamduurdhairtaibaihbolno .logo-slider{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .logo-slider img {
+    width: 100%; /* Make sure the images fill the container */;
+  }
+  
+  
+  
+  
+  
+   
+    .link .social-media p{
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      color: #fff;
+    }
+    
+    .link{
+      margin-top: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #033c8c;
+    }
+    
+    .link .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #fff;
+    margin: 5px 15px 5px 0;
+    transition: .5rem ease;
+    margin-left: 2%;
+    text-decoration: none;
+    }
+  
+    .link .social-media {
+      margin-left: 10px;
+    }
+    
+    .link img{
+      height: 150px;
+      width: 150px;
+      border: 3px solid #fff;
+      border-radius: 30px;
+      margin-right: 10px;
+      margin-left: 0px;
+    }
+  
+    .footer{
+    background: #019bf5;
+    height: auto;
+    width: 100vw;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    margin-top: 3rem;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer h1{
+    padding-top: 5px;
+    /* padding-bottom: 5px; */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* letter-spacing: 0.5px; */
+  }
+
+  .credit{
+    font-size: 0.6rem;
+    color: white;
+  }
+  .credit span{
+    color: #fff;
+  }
+
+    i{
+        height: 10px;
+        width: 10px;
+        font-size: 2rem;
+        color: #fff;
+        margin-right: 18%;
+    }
+
+    p{
+        margin-top: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      html {
+        font-size: 55%;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .header {
+        padding: 2rem 3%;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      #menu-icon {
+        display: block;
+      }
+    
+      .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+      }
+    
+      .navbar.active{
+        display: block;
+      }
+    
+      .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+      }
+    }
+    
+    @media (max-width: 450px) {
+      html{
+        font-size: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="back-button">
+          <a href="#" onclick="goBack()">Буцах</a>
+        </div>
+        <h1>Худалдааны төв</h1>
+      </div>
+
+
+      <div class="Enkhjin">
+
+        <li>Dream </li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud1.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/search?q=46.254766%2C109.424854&oq=46.254766%2C109.424854&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzcxMWowajmoAgCwAgA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8 " target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+    
+    
+        <li>Ажнай </li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud2.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/search?q=7C5F%2B3HV%2C+Bor-Undur%2C+Khentii&oq=7C5F%2B3HV%2C+Bor-Undur%2C+Khentii&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBBzg2NWowajmoAgCwAgA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8 " target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+    
+    
+        <li>Бадмаараг </li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud3.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/search?q=46.253908%2C109.424481&oq=46.253908%2C109.424481&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE2NjhqMGo5qAIAsAIA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8 " target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+      
+
+        <li>Удвал</li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud4.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/search?q=46.254624%2C109.427307&oq=46.254624%2C109.427307&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDEwOTlqMGo5qAIAsAIA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8 " target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Дэлгэрнуур </li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud5.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/search?q=46.254150%2C109.424456&oq=46.254150%2C109.424456&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDEwMDRqMGo5qAIAsAIA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8 " target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Их ирээдүй </li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud6.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/search?q=46.256886%2C109.424424&oq=46.256886%2C109.424424&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzg3MGowajmoAgCwAgA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8 " target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Цэцэг төрөл бүрийн барааны дэлгүүр </li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud7.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/search?q=46.254220%2C109.424916&oq=46.254220%2C109.424916&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzkwOGowajmoAgCwAgA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8 " target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Гэр ахуйн барааны дэлгүүр </li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud8.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/search?q=46.254025%2C109.424427&oq=46.254025%2C109.424427&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzU2NWowajmoAgCwAgA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8 " target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Элит </li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud9.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/search?q=46.257350%2C109.424801&oq=46.257350%2C109.424801&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTc1MDI2ajBqOagCALACAA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8" target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Family shop</li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud10.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/maps/place/46%C2%B015'14.0%22N+109%C2%B025'32.0%22E/@46.2538889,109.4249163,197m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d46.253888!4d109.42556?entry=ttu" target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Гэр ахуйн бараа</li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud11.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/maps/place/46%C2%B015'28.0%22N+109%C2%B025'27.3%22E/@46.2577689,109.4235963,197m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d46.257768!4d109.42424?entry=ttu" target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Төрөл бүрийн бараа</li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud12.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/maps/place/46%C2%B015'26.6%22N+109%C2%B025'27.5%22E/@46.2573959,109.4236663,197m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d46.257395!4d109.42431?entry=ttu" target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Туман</li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud13.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/maps/place/46%C2%B015'16.6%22N+109%C2%B025'27.7%22E/@46.2546029,109.4237123,197m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d46.254602!4d109.424356?entry=ttu" target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Гүнж</li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud14.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/maps/place/46%C2%B015'19.9%22N+109%C2%B025'29.1%22E/@46.2555399,109.4241013,197m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d46.255539!4d109.424745?entry=ttu" target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Хүслэн төв </li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud15.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/maps/place/46%C2%B015'18.4%22N+109%C2%B025'27.4%22E/@46.2551189,109.4236213,197m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d46.255118!4d109.424265?entry=ttu" target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Есөн эрдэнэ</li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud16.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/maps/place/46%C2%B015'17.9%22N+109%C2%B025'27.1%22E/@46.2549609,109.4235573,197m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d46.25496!4d109.424201?entry=ttu" target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+        <li>Гоо сайхан</li>
+
+        <ul>
+          <div class="content-container">
+              <img src="/BU/img2/hud17.jpg" alt="Sample Image">
+              <p>Газрын зураг дээрх байршил нь:<a href="https://www.google.com/maps/place/46%C2%B015'23.3%22N+109%C2%B025'29.6%22E/@46.2564839,109.4242473,197m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d46.256483!4d109.424891?entry=ttu" target="_blank">Энд дарна уу...</a></p>
+            </div>
+        </ul>
+
+      </div> 
+
+      <section class="footer">
+        <h1 class="credit">&copy; <span>Cyberfox x</span> Hope Up</h1>
+      </section>
+    </section>  
+
+  <script src="./script.js"></script>
+
+  <script>
+    // Add this to your script.js file
+function goBack() {
+    window.history.back();
+  }
+  
+
+
+    // Add this to your script.js file
+$(document).ready(function(){
+    $('.logo-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000, // Adjust the speed as needed
+    });
+  });
+  </script>
+</body>
+</html>

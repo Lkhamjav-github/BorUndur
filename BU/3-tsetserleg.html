@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бор-Өндөр</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      scroll-behavior: smooth;
+      font-family: 'Poppons', sans-serif;
+    }
+    
+    /* :root {
+      --bg-color: #051a3e;
+      --second-bg-color: #051a3e;
+      --text-color: #fff;
+      --main-color:#00a6ff     ;
+    } */
+    
+    html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    
+    .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2rem 9%;
+      background: #019bf5;
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+      z-index: 100;
+      margin-bottom: 3rem;
+      margin-top: 0px;
+    }
+    
+    .header.sticky{
+      border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    } 
+    
+    .header h1{
+      font-size: 2.5rem;
+      color: #fff;
+      font-weight: 600;
+      /* letter-spacing: 0.1rem; */
+      cursor: default;
+    }
+    
+    .Enkhjin img {
+          width: 95%;
+          height: auto;
+          border-radius: 15px;
+          border: 3px solid #019bf5;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+    
+    .back-button a{
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #019bf5;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    
+    .Enkhjin{
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 12rem;
+    }
+    
+    .Enkhjin h3{
+    color: #000;
+    font-size: 1.9rem;
+    font-weight: 600;
+    }
+    
+    .Enkhjin p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+    }
+    
+    .Enkhjin .tod{
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 600;
+    }
+
+    .lol{
+      margin-top: 50px;
+      border-top: 3px solid #019bf5;
+    }
+
+    .lol p{
+      color: #222222;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .lol a{
+      color: #019bf5;
+    }
+    
+    /* .back-button a {
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #033c8c;
+      text-decoration: none;
+      margin-right: 20px;
+    } */
+    
+    
+    /* .content2{
+      flex: 1 1 42rem;  
+      margin-bottom: 7rem; 
+      padding-bottom: 0px;
+      margin-top: .3rem;
+     }
+    
+     .content2 h3{
+      color: #fff;
+      font-size: 1.6rem;
+      margin-top: .3rem;
+      letter-spacing: 0.5px;
+      font-weight: 900;
+     }
+    
+     .content2 p{
+      padding: 1rem 0;
+      font-size: 1.2rem;
+      color: #fff;
+      line-height: 2;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+     } */
+    
+     .footer{
+      background: #019bf5;
+      height: auto;
+      width: 100vw;
+      padding-top: 15px;
+      padding-bottom: 2px;
+      margin-top: 3rem;
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .footer h1{
+      padding-top: 5px;
+      /* padding-bottom: 5px; */
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      /* letter-spacing: 0.5px; */
+    }
+    
+    .credit{
+      font-size: 0.6rem;
+      color: white;
+    }
+    .credit span{
+      color: #fff;
+    }
+    
+       /* breakpoints */
+    @media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+    }
+    
+    @media (max-width: 991px) {
+    .header {
+      padding: 2rem 3%;
+    }
+    }
+    
+    @media (max-width: 768px) {
+    #menu-icon {
+      display: block;
+    }
+    
+    .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: #fff;
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      display: none;
+    }
+    
+    .navbar.active{
+      display: block;
+    }
+    
+    .navbar a{
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+    }
+    }
+    
+    @media (max-width: 450px) {
+    html{
+      font-size: 50%;
+    }
+    }
+        </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="back-button">
+          <a href="#" onclick="goBack()">Буцах</a>
+        </div>
+        <h1>Бор-Өндөр сумын 3-р цэцэрлэг</h1>
+      </div>
+
+      <div class="Enkhjin">      
+        <img src="/BU/img2/bujin zu.jpeg" alt="Sample Image">
+        <p>238 суралцагчидтай, нийт 32 ажилчидтай үйл ажиллагаагаа явуулж байна. 	2022 онд 3 дугаар цэцэрлэгийн арга зүйч Ө. Алимаа нь Хэнтий аймгийн боловсролын салбарын  “Шилдэг багш”, Боловсрол Шинжлэх Ухааны газрын  2022 оны“Шилдэг арга зүйч”-ээр тус тус шагнагдсан.  
+            3.	Хэнтий аймгийн боловсролын байгууллагын дунд зохион байгуулагддаг оны “Шилдэг илтгэл” шалгаруулах уралдаанд 2019, 2020, 2021, 2022 онуудад манлайлан оролцож  багаараа шагналт байр эзэлж,  амжилттай оролцдог.  	Хүүхдийн цэцэрлэгийн багшийн гүйцэтгэлийн үнэлгээний сургалтын байгууллагын үр дүнгийн үнэлгээний цэцэрлэгээрээ 93.15%-тай үнэлэгдэж, Хэнтий аймагт 88.11%-тай индексээрээ I -т, Улсад 90.22%-тай индексээрээ II үнэлэгдэж өмнөх оноосоо ахиулан амжилттай ажиллаа. 	Сургалтын хөтөлбөрийн хэрэгжилтийг ханган,  багш ажилтнаа тасралтгүй хөгжүүлэн эрүүл аюулгүй, тэгш хүртээмжтэй сургалтын орчин бүрдүүлж, удирдлагын манлайлан менежментээрээ баг хамт олноо удирдан эвлэлдэн нэгдэж хэрэглэгчийн сэтгэл ханамжийг хангаж ажилласны үр дүнд 2023 оны байгууллагын гүйцэтгэлийн үнэлгээгээр аймагтаа тэргүүллээ. 
+            6.	Хэнтий  аймгийн Төрийн шагналт Р. Чойномын нэрэмжит нийтийн номын сангаас явуулсан “ Үлгэрийн баатрууд амилсан нь” цахим уралдаанд Т. Эрдэнэчимэг багштай Бэлтгэл “А” бүлгийн хүүхдүүд “Царцаа Намжил” үлгэрээр жүжигчилсэн тоглолт хийж 1-р байрт шалгарсан.
+            7.	Хэнтий аймаг БШУГ, “ЭС ЖИ ЖИ ПРЭНД” ХХК-аас хамтран“STEM БОЛОВСРОЛ-2023” ур чадварын аймгийн уралдаанд Бага боловсролын төрөлд 16 сургуулийн бага ангийн багш, СӨБ-ийн төрөлд 7 цэцэрлэг оролцож багш Г.Сүрэн Тэргүүн байр эзлэж БНСУ руу сургалтанд явах эрх , мөнгөн шагналаар шагнагдлаа.
+            8.	STEM сургалтын технологийг хэрэгжүүлэх сургагч багш бэлтгэх сургалтанд багш Г.Сүрэн, багш Г.Золзаяа нар Улаанбаатар хотод 2023.03.31-ны өдөр сургалтанд хамрагдаж Сургагч багшийн Батламжаа гардаж авлаа. STEM /Science, Technology, Engineering, Mathematics/ буюу монголоор ШИМТ /Шинжлэх ухаан, Инженерчлэл, Математик, Технологи/ 
+            9.	Эцэг эх, асран хамгаалагчдад STEM сургалтын технологийг хэрэгжүүлэх зорилгоор сургагч багш Г. Сүрэн, Г.Золзаяа нар сургалт явуулж дадлага ажил хийлгэж ирэх хичээлийн жилд хэрэгжүүлэх талаар санал бодлоо солилцлоо.
+            10.	2023.05-4, 5-ны өдрүүдэд Хэнтий амйгийн “Урд бүс”-ийн цэцэрлэгүүдийн “Харилцан суралцаж-Хамтдаа хөгжье” Дорноговь аймгийн Сайншанд суманд амжилтай болж өөрийн цэцэрлэгийн “Сайн туршлаг”-ыг дэлгэрүүлж ажиллаа. 
+            2023.04.04-05.05-ны хооронд  Бор-Өндөр Соёлын төвөөс 2 дахь жилдээ зохион байгуулж байгаа “Ангиараа авьяастан” урлагийн боловсрол, гоо зүйн мэдрэмжийг дээшлүүлэх, авьяас билгийг нээн хөгжүүлэх зорилгоор цахим уралдаанд Найрал дууны төрөлд Т.Эрдэнэчимэг багштай Бэлтгэл А бүлгийн хүүхдүүд  “Тэргүүн” байр Ж.Гэрэлбат багштай Бэлтгэл Б бүлгийн хүүхдүүд “Уран уншлагын төрөлд” “Тэргүүн” байр тус тус орсон амжилтыг үзүүллээ.
+            Дэлхийн багш нар 29, Монголын багш нарын 57 өдрийг тохиолдуулан Хэнтий аймгийн Сургуулийн өмнөх боловсролын байгууллагын багш нарын хүүхэд бүрийг хөгжүүлэх шилдэг арга зүй, шинэлэг бүтээлч туршлагыг сурталчилах, түгээн дэлгэрүүлэх , багшийн ур чадвар хөгжлийг дэмжих  “Ур Чадвар -2023  “ уралдаанд Г. Золзаяа багш 1-р байр
+            Бор-Өндөр сумын 3 дугаар цэцэрлэгийн зөвлөлийн дарга Т.БАТНАСТ, гэргий Ц.НОРЖМАА нар гэр бүлийн зүгээс хүүхдийг багаас нь номтой нөхөрлүүлж, үлгэр түүхээр дамжуулан хүүхдүүдийн хандлага,зан чанар, чадваруудыг хөгжүүлэн хүүхэд бүрийг өөртөө итгэлтэй бие даасан бүтээлч хүн болгон төлөвшүүлэх зорилгоор 7- н төрлийн 64 ширхэг 1.0 сая төгрөгний үнэтэй номыг хандивласан.
+          </p>
+
+          <div class="lol">
+          <p >Холбоо барих</p>
+          <ul>   
+             <p>Газрын зураг дээрх байршил нь :<a href="https://www.google.com/search?q=46.252637%2C109.426693&oq=46.252637%2C109.426693&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzg5OWowajmoAgCwAgA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8" target="_blank"> Энд дарна уу...</a></p>
+          </ul>   
+          </div>
+
+   
+      </div>
+
+      <section class="footer">
+        <h1 class="credit">&copy; <span>Cyberfox x</span> Hope Up</h1>
+      </section>
+    </section>  
+   
+  <script src="script.js"></script>
+
+  <script>
+    // Add this to your script.js file
+function goBack() {
+    window.history.back();
+  }
+  
+
+
+    // Add this to your script.js file
+$(document).ready(function(){
+    $('.logo-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000, // Adjust the speed as needed
+    });
+  });
+  </script>
+</body>
+</html>
+
+    
+</body>
+</html>

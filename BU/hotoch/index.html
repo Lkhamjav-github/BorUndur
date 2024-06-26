@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-q7GzjUIJZAx2r53KlQA5jsRImk8IlMTQFPeGz9LcAVpaeP+aO0h/cXmRFp4EKXb5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppons', sans-serif;
+  }
+  
+  /* :root {
+    --bg-color: #051a3e;
+    --second-bg-color: #051a3e;
+    --text-color: #fff;
+    --main-color:#00a6ff     ;
+  } */
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: #019bf5;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 3rem;
+    margin-top: 0px;
+  }
+  
+  .header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+  } 
+  
+  .header h1{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    /* letter-spacing: 0.1rem; */
+    cursor: default;
+  }
+
+  .navbar{
+    border-radius: 0 0 30px 30px;
+    /* border: 0.2rem solid #019bf5; */
+    margin-top: 0px;
+  }
+  
+  .navbar a{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #000;
+    margin-left: 4rem;
+  }
+
+  .navbar a:hover{
+    color: #019bf5;
+  }
+  
+  #menu-icon{
+    font-size: 3.6rem;
+    color: #fff;
+    display: none;
+  }
+  
+  .Enkhjin{
+    padding: 20px;
+    padding-top: 0px;
+  }
+  
+  .back-button a {
+      height: auto;
+      width: auto;
+      margin-top: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: #019bf5;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    main {
+      margin-top: 8rem;
+      margin-bottom: 0rem;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .udird{
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  
+    .po h1{
+      font-size: 2.3rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      margin-top: 13px;
+    }
+  
+    button {
+      height: 150px;
+      width: 150px;
+      padding: 10px 10px;
+      /* font-size: 0.9rem; */
+      margin: 5px;
+      cursor: pointer;
+      background-color: #019bf5;
+      color: #fff;
+      /* border: 3px solid #0790ca; */
+      box-shadow: 0 1.5rem 1.5rem #393a3b;
+      border-radius: 30px;
+      margin-bottom: 15px;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+  .tn{
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 0.8rem;
+  }
+
+  .logo-slider {
+    width: 80%; /* Adjust the width as needed */
+    margin: 50px auto; /* Center the slider on the page */
+    color: #0ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-top: 10px;
+  }
+  
+  .Enkhjinbichamduurdhairtaibaihbolno{
+    margin-bottom: 0px;
+    background: #033c8c;
+      padding-top: 10px;
+      padding-bottom: 0px;
+  }
+  
+  .Enkhjinbichamduurdhairtaibaihbolno .logo-slider img{
+    width: 80px;
+    height: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .Enkhjinbichamduurdhairtaibaihbolno .logo-slider{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .logo-slider img {
+    width: 100%; /* Make sure the images fill the container */;
+  }
+  
+  
+  
+  
+  
+   
+  .link .social-media p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* letter-spacing: 0.7px; */
+    margin-left: 0px;
+    padding-left: 0.5px;
+    margin-bottom: 7px;
+    color: #fff;
+  }
+
+  .social-media{
+    margin-right: 30px;
+    padding-right: 0px;
+  }
+  
+  .link{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #019bf5;
+  }
+  
+  .link .social-media a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 10px 10px 10px 0;
+  transition: .5rem ease;
+  margin-left: 2%;
+  text-decoration: none;
+  }
+
+  .link .social-media {
+    margin-left: 10px;
+  }
+
+  .map{
+    margin-left: 0px;
+  }
+  
+  .link img{
+    height: 150px;
+    width: 150px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+  
+  .footer{
+    background: #019bf5;
+    height: auto;
+    width: 100vw;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    margin-top: 3rem;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer h1{
+    padding-top: 5px;
+    /* padding-bottom: 5px; */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* letter-spacing: 0.5px; */
+  }
+
+  .credit{
+    font-size: 0.6rem;
+    color: white;
+  }
+  .credit span{
+    color: #fff;
+  }
+
+    i{
+        height: 10px;
+        width: 10px;
+        font-size: 2rem;
+        color: #fff;
+        margin-right: 18%;
+    }
+
+    p{
+        margin-top: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      html {
+        font-size: 55%;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .header {
+        padding: 2rem 3%;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      #menu-icon {
+        display: block;
+      }
+    
+      .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+      }
+    
+      .navbar.active{
+        display: block;
+      }
+    
+      .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+      }
+    }
+    
+    @media (max-width: 450px) {
+      html{
+        font-size: 50%;
+      }
+    }
+
+    </style>
+
+  </head>
+<body>
+
+    <div class="header">
+        <div class="back-button">
+          <a href="#" onclick="goBack()">Буцах</a>
+        </div>
+        <h1>Хөтөч</h1>
+      </div>
+      
+<main>    
+
+    <a href="/BU/nutgiin-udirdlaga/index.html">
+      <button class="udird"><p>Нутгийн удирдлага</p></button>
+    </a> 
+
+    <a href="https://e-mongolia.mn/services/legal_entity/gov_agency/61ad72ea72d08b08b4d78a5e">
+      <button><p>Төрийн үйлчилгээ</p></button>
+    </a> 
+
+    <a href="/BU/bank-sanhuu.html">
+        <button><p>Банк ба санхүү</p></button>
+    </a>    
+
+    <a href="/BU/hudaldaanii-tov.html">
+        <button><p>Худалдааны төв</p></button>
+    </a> 
+
+    <a href="/BU/pub.html">
+        <button><p>Ресторан & Паб</p></button>
+    </a> 
+
+    <a href="/BU/hotel.html">
+        <button><p>Зочид буудал</p></button>
+    </a> 
+
+    <a href="/BU/hunsnii-delguur.html">
+        <button><p>Хүнсний дэлгүүр</p></button>
+    </a>    
+
+    <a href="/BU/oron-suuts.html">
+        <button><p>Орон сууц</p></button>
+    </a> 
+
+    <a href="/BU/mashin.html">
+        <button><p>Машин техник</p></button>
+    </a> 
+
+    <a href="/BU/busad.html">
+        <button><p>Бусад үйлчилгээ</p></button>
+    </a> 
+
+</main>  
+
+  <section class="footer">
+    <h1 class="credit">&copy; <span>Cyberfox x</span> Hope Up</h1>
+  </section>
+</section>      
+<script src="./script.js"></script>
+
+<script>
+  // Add this to your script.js file
+function goBack() {
+    window.history.back();
+  }
+  
+
+    // Add this to your script.js file
+$(document).ready(function(){
+    $('.logo-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000, // Adjust the speed as needed
+    });
+  });
+</script>
+</body>
+</html>
+
+
